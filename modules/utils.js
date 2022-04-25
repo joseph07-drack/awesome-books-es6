@@ -1,3 +1,5 @@
+import Action from './actions.js';
+
 export default class UI {
   addingBooks = () => {
     const action = new Action();

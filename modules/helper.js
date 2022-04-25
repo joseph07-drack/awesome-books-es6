@@ -1,6 +1,3 @@
-// import the luxon module
-import { DateTime } from 'luxon';
-
 export default class Helper {
   // remove the active class to all links
   removeActiveClass = () => {
@@ -15,7 +12,9 @@ export default class Helper {
 
   getDate = () => {
     document.querySelector('#date-time').innerText =
-      DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+      luxon.DateTime.now().toLocaleString(
+        luxon.DateTime.DATETIME_FULL_WITH_SECONDS
+      );
   };
 
   clearForm = () => {

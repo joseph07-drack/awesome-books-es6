@@ -1,7 +1,7 @@
-import Action from './modules/actions';
-import Book from './modules/book';
-import UI from './modules/utils';
-import Helper from './modules/helper';
+import Action from './modules/actions.js';
+import Book from './modules/book.js';
+import UI from './modules/utils.js';
+import Helper from './modules/helper.js';
 
 // create instances for class
 const displayContent = new UI();
@@ -61,5 +61,5 @@ document.addEventListener('click', (e) => {
 
 // selecting the current navbar link
 links.forEach((link) =>
-  link.addEventListener('click', selectCurrentActiveItem)
+  link.addEventListener('click', helper.selectCurrentActiveItem)
 );
