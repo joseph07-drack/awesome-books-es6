@@ -1,6 +1,8 @@
+import { DateTime } from '../node_modules/luxon/src/luxon.js';
+
 // remove the active class to all links
 const removeActiveClass = () => {
-  let links = document.querySelectorAll('.nav-link');
+  const links = document.querySelectorAll('.nav-link');
   links.forEach((link) => link.classList.remove('active'));
 };
 
@@ -12,10 +14,7 @@ export default class Helper {
   }
 
   getDate = () => {
-    document.querySelector('#date-time').innerText =
-      luxon.DateTime.now().toLocaleString(
-        luxon.DateTime.DATETIME_FULL_WITH_SECONDS
-      );
+    document.querySelector('#date-time').innerText = DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
   };
 
   clearForm = () => {

@@ -8,8 +8,8 @@ const displayContent = new UI();
 const action = new Action();
 const helper = new Helper();
 
-// trigger the getDate method to get the current date and time
-helper.getDate();
+// trigger each second the getDate method to get the current date and time
+setInterval(helper.getDate, 1000);
 
 const form = document.querySelector('.form-input');
 
@@ -60,6 +60,4 @@ document.addEventListener('click', (e) => {
 });
 
 // selecting the current navbar link
-links.forEach((link) =>
-  link.addEventListener('click', helper.selectCurrentActiveItem)
-);
+links.forEach((link) => link.addEventListener('click', helper.selectCurrentActiveItem));
