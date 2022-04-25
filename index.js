@@ -34,3 +34,24 @@ addButton.addEventListener('click', () => {
   action.saveBook(newBook);
   helper.clearForm();
 });
+
+// removing a book
+document.addEventListener('click', (e) => {
+  const button = e.target;
+  if (button.className === 'btn-remove') {
+    displayContent.deleteBook(button);
+    action.deleteBook(button);
+  } else if (button.parentNode.id === 'list') {
+    displayInfo.style.display = 'flex';
+    contactInfo.style.display = 'none';
+    saveInfo.style.display = 'none';
+  } else if (button.parentNode.id === 'add') {
+    saveInfo.style.display = 'flex';
+    contactInfo.style.display = 'none';
+    displayInfo.style.display = 'none';
+  } else if (button.parentNode.id === 'contact') {
+    saveInfo.style.display = 'none';
+    contactInfo.style.display = 'flex';
+    displayInfo.style.display = 'none';
+  }
+});
