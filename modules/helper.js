@@ -14,9 +14,7 @@ const selectCurrentActiveItem = () => {
 
 const getDate = () => {
   document.querySelector('#date-time').innerText =
-    luxon.DateTime.now().toLocaleString(
-      luxon.DateTime.DATETIME_FULL_WITH_SECONDS
-    );
+    DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
 };
 
 const clearForm = () => {
