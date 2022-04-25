@@ -55,3 +55,8 @@ document.addEventListener('click', (e) => {
     displayInfo.style.display = 'none';
   }
 });
+
+// selecting the current navbar link
+links.forEach((link) =>
+  link.addEventListener('click', selectCurrentActiveItem)
+);
