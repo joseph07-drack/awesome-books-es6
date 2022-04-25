@@ -1,3 +1,8 @@
+import Action from './modules/actions';
+import Book from './modules/book';
+import UI from './modules/utils';
+import Helper from './modules/helper';
+
 const form = document.querySelector('.form-input');
 
 const links = document.querySelectorAll('.nav-link');
