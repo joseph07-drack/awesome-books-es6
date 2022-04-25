@@ -6,6 +6,8 @@
 
 ## Live Demo
 
+[Live demo here](https://joseph07-drack.github.io/awesome-books-es6/)
+
 ## Built With
 
 - HTML
