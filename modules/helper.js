@@ -1,3 +1,6 @@
+// import the luxon module
+import { DateTime } from 'luxon';
+
 // remove the active class to all links
 const removeActiveClass = () => {
   links.forEach((link) => link.classList.remove('active'));
