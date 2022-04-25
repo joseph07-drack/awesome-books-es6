@@ -1,23 +1,25 @@
 // import the luxon module
 import { DateTime } from 'luxon';
 
-// remove the active class to all links
-const removeActiveClass = () => {
-  links.forEach((link) => link.classList.remove('active'));
-};
+export default class Helper {
+  // remove the active class to all links
+  removeActiveClass = () => {
+    links.forEach((link) => link.classList.remove('active'));
+  };
 
-// add nav-item-active class to the current link
-const selectCurrentActiveItem = () => {
-  removeActiveClass();
-  this.classList.add('active');
-};
+  // add nav-item-active class to the current link
+  selectCurrentActiveItem = () => {
+    removeActiveClass();
+    this.classList.add('active');
+  };
 
-const getDate = () => {
-  document.querySelector('#date-time').innerText =
-    DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
-};
+  getDate = () => {
+    document.querySelector('#date-time').innerText =
+      DateTime.now().toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+  };
 
-const clearForm = () => {
-  form.elements.title.value = '';
-  form.elements.author.value = '';
-};
+  clearForm = () => {
+    form.elements.title.value = '';
+    form.elements.author.value = '';
+  };
+}
