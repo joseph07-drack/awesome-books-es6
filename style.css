@@ -15,6 +15,10 @@
   --sl-red: #d9534f;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -101,6 +105,17 @@ main {
 .single-book {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.single-book:nth-child(even) {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+.single-book:nth-child(odd) {
+  background-color: rgba(224, 255, 255, 0.5);
 }
 
 .author-name {
@@ -120,6 +135,7 @@ main {
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   margin: 20px 0;
   padding: 10px;
+  margin-top: 90px;
 }
 
 .presentation {
@@ -170,6 +186,8 @@ input[type='text']:first-child {
 .contact {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
 }
 
 .contact ul {
@@ -193,6 +211,10 @@ footer {
   padding: 12px;
   position: absolute;
   bottom: 0;
+}
+
+footer img {
+  margin-right: 60px;
 }
 
 footer img {
@@ -229,6 +251,10 @@ footer img {
     font-weight: var(--fw-600);
   }
 
+  .presentation h1 {
+    margin: 45px 0;
+  }
+
   .form-container {
     padding: 20px 10px;
   }
@@ -257,5 +283,23 @@ footer img {
 
   .dev-details p:last-child {
     color: var(--sl-orange);
+  }
+
+  footer img {
+    margin-right: 470px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer img {
+    margin-left: 400px;
+  }
+
+  .form-container {
+    padding: 50px 390px;
+  }
+
+  .presentation {
+    padding-inline: 70px;
   }
 }

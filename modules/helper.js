@@ -1,14 +1,15 @@
-export default class Helper {
-  // remove the active class to all links
-  removeActiveClass = () => {
-    links.forEach((link) => link.classList.remove('active'));
-  };
+// remove the active class to all links
+const removeActiveClass = () => {
+  let links = document.querySelectorAll('.nav-link');
+  links.forEach((link) => link.classList.remove('active'));
+};
 
+export default class Helper {
   // add nav-item-active class to the current link
-  selectCurrentActiveItem = () => {
+  selectCurrentActiveItem() {
     removeActiveClass();
     this.classList.add('active');
-  };
+  }
 
   getDate = () => {
     document.querySelector('#date-time').innerText =
@@ -18,7 +19,7 @@ export default class Helper {
   };
 
   clearForm = () => {
-    form.elements.title.value = '';
-    form.elements.author.value = '';
+    document.querySelector('#title').value = '';
+    document.querySelector('#author').value = '';
   };
 }
