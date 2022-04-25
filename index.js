@@ -14,3 +14,9 @@ const action = new Action();
 const saveInfo = document.querySelector('.form-container');
 const contactInfo = document.querySelector('.contact');
 const displayInfo = document.querySelector('.presentation');
+
+document.addEventListener('DOMContentLoaded', () => {
+  displayContent.addingBooks();
+  contactInfo.style.display = 'none';
+  saveInfo.style.display = 'none';
+});
