@@ -8,6 +8,9 @@ const displayContent = new UI();
 const action = new Action();
 const helper = new Helper();
 
+// trigger the getDate method to get the current date and time
+helper.getDate();
+
 const form = document.querySelector('.form-input');
 
 const links = document.querySelectorAll('.nav-link');
