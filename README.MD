@@ -18,7 +18,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone Repository
    ```
-   git clone git@github.com:https://github.com/braincee/awesome-books-es6.git
+   git clone git@github.com:https://github.com/joseph07-drack/awesome-books-es6.git
    ```
 
 ### Install linters(webhint, stylelint, eslint)
